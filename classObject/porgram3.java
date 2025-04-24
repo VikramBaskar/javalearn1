@@ -1,6 +1,6 @@
 
 class company{
-    private int empid = 101;
+     int empid = 101;
 
     public boolean equals(Object obj){
         company emp  =(company)obj;

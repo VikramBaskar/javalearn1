@@ -14,7 +14,6 @@ class program3{
      arr.add(12);
      arr.add(13);
      arr.add(14);
-    
      for(int i=0;i<arr.size();++i){
         total +=arr.get(i);
         Average =total/arr.size();

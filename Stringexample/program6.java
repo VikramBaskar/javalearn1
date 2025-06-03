@@ -28,7 +28,7 @@ public static void main(String[] args) {
 //   String ste = "34.56";
 //   int val = Integer.parseInt(ste);
 //   System.out.println(val);
-  String se ="1.2344555f";
+  String se ="12344555";
   long f =Long.parseLong(se);
   System.out.println(f);
 }

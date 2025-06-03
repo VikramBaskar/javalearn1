@@ -5,6 +5,7 @@
         System.out.println(str.compareTo("vijay"));
         System.out.println(str.compareTo("Ajith"));
         System.out.println(str.compareTo("dhanush"));
+        System.out.println(str.compareTo("vikram"));
     }
 
  }

@@ -17,5 +17,6 @@ public class programcod1{
         city c = new city(1.2);
         city q = new city(2);
         city w = new city("asd");
+        //city a = new city();
     }
 }

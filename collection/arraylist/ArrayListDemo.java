@@ -5,11 +5,12 @@ import java.util.List;
 class ArrayListDemo{
     public static void main(String[] args) {
         ArrayList al = new ArrayList();
+        //System.out.println(al.size());
         al.add(10);
         al.add(50);
         al.add(30);
         al.add(40);
-       // System.out.println(al);
+     //  System.out.println(al);
        System.out.println( al.add(70));
         //System.out.println(al);
         al.add('a');

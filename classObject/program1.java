@@ -12,7 +12,8 @@ public class program1{
     public static void main(String[] args) {
         demo d = new demo();
         play p = new play();
+          System.out.println(d.toString());
         System.out.println(p.toString());
-        System.out.println(d.toString());
+      
     }
 }

@@ -9,6 +9,7 @@ class program2{
   public static void main(String[] args) {
       program2 pr2 = new program2();
       System.out.println(pr2.a);
+
     
   }
 }

@@ -12,8 +12,8 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person p) {
-        if (this.age > p.age) return -1;  // descending order
-        else if (this.age < p.age) return 1;
+        if (this.age < p.age) return -1;  // descending order
+        else if (this.age > p.age) return 1;
         else return 0;
     }
 
@@ -26,7 +26,7 @@ public class Person implements Comparable<Person> {
 
 public class program8 {
     public static void main(String[] args) {
-        List<Person> list = new ArrayList<>();
+        List<Person> list = new ArrayList<>(); //object creation
         list.add(new Person(25));
         list.add(new Person(25));
         list.add(new Person(20));

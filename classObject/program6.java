@@ -4,7 +4,7 @@ class Connection implements AutoCloseable {
         System.out.println("Connection opened.");
     }
 
-    @Override
+  //  @Override
     public void close() {
         System.out.println("Resources cleared using close().");
     }

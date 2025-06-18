@@ -1,7 +1,6 @@
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.concurrent.locks.ReentrantLock;
 
  class program5{
     public static void main(String[] args) {

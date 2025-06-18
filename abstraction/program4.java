@@ -38,7 +38,7 @@ public static Animal createAnimal(String S){
     return null;
 }
 }
-public class program4{
+public class program4 {
     public static void main(String[] args) {
         
         Scanner scn =new Scanner(System.in);

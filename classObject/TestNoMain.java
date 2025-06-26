@@ -4,7 +4,7 @@ public class TestNoMain {
         System.exit(0);
     }
     
-    public static void main(String[] args) {
-        // Nothing needed here
-    }
+    // public static void main(String[] args) {
+    //     // Nothing needed here
+    // }
 }

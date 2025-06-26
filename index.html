@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay with Card</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        .StripeElement {
+            box-sizing: border-box;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book Parking Slot</h2>
+    <form id="payment-form">
+        <div id="card-element"></div>
+        <button id="submit">Pay</button>
+        <div id="payment-result"></div>
+    </form>
+
+    <script>
+        const stripe = Stripe("pk_test_your_public_key");
+        const elements = stripe.elements();
+        const card = elements.create("card");
+        card.mount("#card-element");
+
+        const form = document.getElementById("payment-form");
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            // 1. Create PaymentIntent from backend (not shown here)
+            const res = await fetch("/api/slots/payintent/1", { method: "POST" });
+            const { clientSecret } = await res.json();
+
+            // 2. Confirm the card payment
+            const result = await stripe.confirmCardPayment(clientSecret, {
+                payment_method: {
+                    card: card
+                }
+            });
+
+            const resultDiv = document.getElementById("payment-result");
+            if (result.error) {
+                resultDiv.textContent = result.error.message;
+            } else {
+                if (result.paymentIntent.status === "succeeded") {
+                    resultDiv.textContent = "Payment successful!";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,24 +1,20 @@
-// class program34{
-//     static void reversearray(int [] arr){
+class sample{
 
-//         int n=arr.length;
-
-//         int [] temp = new int[n];
-
-//         for(int i=0;i<n;i++)
-//             temp[i]=arr[n-i-1];
-        
-
-//         for(int i=0;i<n;i++)
-//             arr[i]=temp[i]; 
-        
-//     }  
-//     public static void main(String[] args) {
-//         int[]arr={1,2,3,4,5,6,7};
-//         reversearray(arr);
-//        for(int i=0;i<arr.length;i++){
-//         System.out.print(arr[i]+"   ");
-//        }
-//     }   
-// }
-
+    public sample(int a) {
+        System.out.println("Table fan");
+    }
+     
+     public sample(double d){
+        System.out.println("wall mounted fan");
+     }
+     public sample(String s){
+        System.out.println("Celing fan");
+     }
+}
+public class program34{
+    public static void main(String[] args) {
+        sample s= new sample(2.3);
+        sample w =new sample(1);
+        sample st =new sample("hi");
+    }
+}

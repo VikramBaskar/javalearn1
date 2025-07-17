@@ -20,6 +20,9 @@ class program5{
         Shape sh  = new Shape();
        
         sh.color();
+        sh.circle();
+        sh.Square();
+        System.out.println(sh.a);
     
 
     }

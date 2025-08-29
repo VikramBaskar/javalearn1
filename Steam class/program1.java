@@ -14,6 +14,6 @@ List<String> filtered = names.stream()
                              .collect(Collectors.toList());
 
 System.out.println(filtered); // [Jerry]
-
+    
     }
 }

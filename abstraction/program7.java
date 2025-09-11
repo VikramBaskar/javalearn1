@@ -13,6 +13,7 @@ public static void main(String[] args) {
     
     door w = new window();
     w.book();
+    System.out.println(w.a);
  
 }
 }

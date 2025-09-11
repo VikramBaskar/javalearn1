@@ -13,6 +13,6 @@ public class porgram3{
      
         company c = new company();
         company c1=  new company();
-        System.out.println(c.equals(c));
+        System.out.println(c.equals(c1));
     }
 }
